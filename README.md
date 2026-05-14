@@ -1,3 +1,4 @@
+ChatGPT Image 12 de mai. de 2026, 13_50_13.png
  Pedro Henrique Pires de Almeida
 > Estudante de Análise e desenvolvimento de sistemas
  
