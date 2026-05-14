@@ -1,0 +1,157 @@
+1.1 Discrepância de Dados (Outliers): Quando um Valor "Mente" 
+sobre a MédiaUm outlier é um valor que se destaca 
+drasticamente do restante dos dados. Ele pode distorcer a 
+média, dando uma ideia errada da realidade.Como isso 
+acontece?A média aritmética tenta equilibrar todos os valores, 
+mas um outlier pode "puxar" a média para cima ou para baixo, 
+não refletindo a maioria dos dados.Exemplo: Se você tem 
+vendas de R100,R 200 e R5000,ameˊdiaeˊR 1.766,66. O valor 
+R$ 5000 distorta a média, não representando as vendas 
+típicas
+1.2 Às vezes, ignoramos valores extremos para obter uma visão 
+mais fiel dos dados. A Média Aparada faz isso para:Limpar 
+erros: Remover falhas técnicas ou eventos irrepetíveis.Focar 
+na tendência: Priorizar o "corpo" dos dados, ignorando as 
+caudas da curva.Estabilizar a análise: Evitar distorções 
+causadas por valores atípicos.
+
+
+
+1.3 Margem de Tolerância em Auditorias Financeira: A Margem de 
+Tolerância é o limite aceitável de erro em relatórios financeiros sem 
+comprometer sua validade. Ela se baseia em três pilares:
+
+Custo-Benefício da Investigação: Focar esforços onde o risco é real, 
+evitando investigações caras para erros insignificantes.
+
+Materialidade: Um erro é "material" se impactar decisões de investidores ou 
+gerentes. O valor é ajustado conforme o tamanho do negócio.
+
+Risco de Amostragem: Serve como "colchão de segurança" para concluir 
+que as demonstrações financeiras estão "razoavelmente corretas".
+
+
+
+Teste de Estresse: Análise de VendasValores: Venda 1 = 100, Venda 2 = 200, 
+Venda 3 = 5000.
+
+
+Média: R$ 1.766,66.O sistema não ativou a "Quarentena" pois a média ficou 
+abaixo de R10.000,00.AvendadeR 5.000,00 não atingiu o gatilho de 5x para 
+revisão manual.
+
+
+
+2. - LIMITE_SEGURANCA = 10000.00
+
+print(f"Limite de Segurança inicial: R$ {LIMITE_SEGURANCA:,.2f}")
+
+- vendas = []
+
+for i in range(1, 4):
+
+while True:
+
+try:
+
+valor_venda = input(f"Digite o valor da venda {i} do dia (ex: 
+1234.56): ").replace(',', '.')
+
+vendas.append(float(valor_venda))
+
+break
+
+except ValueError:
+
+print("Entrada inválida. Por favor, digite um número.")
+
+
+venda1, venda2, venda3 = vendas[0], vendas[1], vendas[2]
+
+
+print(f"Venda 1: R$ {venda1:,.2f}")
+
+print(f"Venda 2: R$ {venda2:,.2f}")
+
+print(f"Venda 3: R$ {venda3:,.2f}")
+
+
+- def analisar_vendas(v1, v2, v3):
+
+global LIMITE_SEGURANCA # Permite a alteração da variável 
+global
+
+
+
+Logica de investigação -
+
+print("\n--- Análise de Vendas ---")
+
+
+# Calcula a média simples
+
+media = (v1 + v2 + v3) / 3
+
+print(f"Média das vendas: R$ {media:,.2f}")
+
+
+# Lógica de Investigação
+
+if media > LIMITE_SEGURANCA:
+
+print("ALERTA: SISTEMA EM QUARENTENA!")
+
+
+# Exemplo de como o gerente poderia ajustar o limite se uma 
+venda for legítima
+
+# Isso aqui é um exemplo e pode ser ajustado com mais lógica 
+ou interação do usuário
+
+if any(v > LIMITE_SEGURANCA * 1.5 for v in [v1, v2, v3]): # Se 
+alguma venda for 50% acima do limite
+
+print("Sugestão: Vendas individuais muito altas. Considere 
+ajustar o LIMITE_SEGURANCA se forem legítimas.")
+
+# Neste ponto, um gerente poderia intervir para, por 
+exemplo, aumentar o LIMITE_SEGURANCA
+
+# Para este exemplo, não faremos uma alteração 
+automática sem input do usuário.
+
+
+3.1 Teste de Estresse: Vendas de 100, 200 e 5000Média: 
+R1.766,66.Osistemana~oativoua"Quarentena"poisameˊdiaficouabai
+xodeR 10.000,00.AnáliseO sistema funcionou como programado, 
+mas a venda de R$ 5.000,00 (quase 3x a média) não disparou a 
+revisão manual (gatilho de 5x).
+
+
+
+
+3.2 Aplicação Real
+
+Aplicação Real: O Perigo da Variável Global
+
+No contexto de Engenharia de Software Bancário, o uso de global 
+LIMITE_SEGURANCA é considerado uma vulnerabilidade de 
+segurança:
+
+Exposição: Variáveis globais residem na memória compartilhada. 
+Qualquer função mal escrita ou um "script injetado" pode alterar o 
+limite para um valor infinito, permitindo que transações fraudulentas 
+passem sem nenhum alerta.
+
+Boas Práticas: Em sistemas reais, esse limite deve ser Encapsulado 
+(dentro de uma classe privada) ou buscado em um serviço externo 
+de configuração com autenticação, garantindo que "quem processa" 
+não tenha o poder de "mudar a regra" sem rastro de auditoria.
+
+
+3.3 Um erro comum é esquecer global LIMITE_SEGURANCA ao 
+modificar o limite dentro de uma função.O que 
+aconteceuExpectativa: Acreditava que o computador usaria o limite 
+global.Realidade: O Python tentava criar uma nova variável local, 
+causando o erro.IntuiçãoO código "trava" visualmente.O bloco if 
+parece desalinhado ou a cor da variável muda no editor.
