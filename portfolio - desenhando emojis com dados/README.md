@@ -13,7 +13,6 @@ O diferencial deste sistema é a utilização de **matrizes multidimensionais** 
 * `Pillow (PIL)`: Para renderização e manipulação de imagens.
 * `Matplotlib`: Para exibição gráfica e visualização de dados.
 
-
 * **Paradigma:** Programação Estruturada e Manipulação de Coleções (Dicionários/Listas).
 
 ## 📊 Funcionalidades e Aprendizados
@@ -31,6 +30,8 @@ O sistema está dividido em dois módulos principais:
 ### 1. Renderizador de Emojis (Matriz RGB)
 
 Transforma uma grade de cores em uma imagem real.
+
+![emoji](emoji.png)
 
 
 ```python
