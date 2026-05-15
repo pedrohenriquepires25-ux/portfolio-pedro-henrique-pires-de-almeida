@@ -1,6 +1,4 @@
-Aqui está o conteúdo adaptado para o seu `README.md`, seguindo exatamente a estrutura e o estilo visual que você solicitou.
 
----
 
 # 🛡️ Sistema de Auditoria de Vendas e Detecção de Outliers
 
