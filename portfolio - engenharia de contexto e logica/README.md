@@ -1,0 +1,49 @@
+# 🌍 Modelagem de Sistemas: Microclima e Evacuação Espacial
+
+## 📝 Descrição do Projeto
+
+Este módulo do projeto foca na tradução de cenários complexos do mundo real para lógica computacional avançada. As atividades exploram desde a análise estatística de conforto ambiental em pontos estratégicos de São Paulo até a simulação de algoritmos de navegação em ambientes físicos sob condições de estresse.
+
+Desenvolvido como parte da disciplina de **Programação (1º Período - ADS)** com o Prof. Diego, o projeto utiliza estruturas de dados multidimensionais e lógica de decisão aninhada para resolver problemas multidisciplinares.
+
+
+*Figura 1: Integração entre análise de dados climáticos e algoritmos de automação para segurança.*
+
+## 🚀 Tecnologias e Estruturas Utilizadas
+
+* **Linguagem:** Python 3.10
+* **Estruturas de Dados:** Matrizes (listas de listas) para armazenamento de dados geográficos.
+* **Lógica Avançada:** Implementação de `match-case` (Python 3.10+) para classificação de IQA (Índice de Qualidade do Ar).
+* **Simulação de Agentes:** Uso da biblioteca `time` para emular o tempo de deslocamento físico e consumo de energia.
+
+## 📊 Detalhamento das Atividades
+
+### 1. Algoritmo do Microclima Local
+
+O sistema processa dados de locais específicos (Parque do Carmo, Estação Dom Bosco e UNICID), calculando uma **Nota de Conforto** baseada em uma fórmula matemática que equilibra temperatura, umidade e poluição.
+
+* **Fórmula de Conforto:** 
+$$Nota = (PesoIQA \times 10) - PenalidadeTemp - (PenalidadeUmid \times 1.5)$$
+
+
+* **Classificação Dinâmica:** O sistema avalia o IQA e atribui pesos que variam de 1.0 (Boa) a 0.1 (Péssima).
+
+### 2. Simulação de Evacuação Espacial
+
+Um algoritmo de estado que simula um agente atravessando um mapa físico mapeado. O agente deve gerenciar recursos limitados enquanto enfrenta obstáculos dinâmicos.
+
+* **Sistema de Inventário:** O agente interage com o ambiente para encontrar chaves e desbloquear caminhos.
+* **Gestão de Obstáculos:** Lógica para lidar com fumaça, aglomerações e portas trancadas, afetando diretamente a **Energia** do agente.
+
+## 🧠 Reflexão Crítica
+
+A transformação de espaços cotidianos em variáveis lógicas revelou que o ambiente onde vivemos é um sistema complexo de pontos estratégicos. O desafio de "fatiar" problemas físicos em comandos `if/else` proporcionou uma nova perspectiva:
+
+* **Pensamento Algorítmico:** A percepção de que o computador é um "aluno literal" que exige clareza absoluta na instrução.
+* **Resolução de Problemas:** A capacidade de encarar imprevistos cotidianos como "bugs" que podem ser resolvidos com calma e a estratégia lógica correta.
+
+## 🔧 Como Executar
+
+1. Clone o repositório.
+2. Para a análise climática: `python microclima.py`.
+3. Para a simulação de evacuação: `python evacuacao.py`.
