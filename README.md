@@ -1,6 +1,9 @@
 
-<img src="ChatGPT Image 12 de mai. de 2026, 13_50_13.png" width="150" align="right">
+# Pedro Henrique Pires de Almeida
+> Estudante de Análise e Desenvolvimento de Sistemas
+<img src="cv/foto_perfil.png" align="right" width="200" style="margin-left: 20px;">
 
+<br clear="right">
  Pedro Henrique Pires de Almeida
 > Estudante de Análise e desenvolvimento de sistemas
  
