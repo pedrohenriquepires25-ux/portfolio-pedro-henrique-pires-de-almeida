@@ -9,7 +9,7 @@
 ### 📫 Contato & Redes Sociais
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-henrique-pires-073972204)
 [![E-mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pedrohenriquepires57@gmail.com)
-[![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://docs.google.com/document/d/1ysK-L3PdTkOzHu3g61MqytEDUTIGdUD4/edit?usp=drive_link&ouid=111475164569735903911&rtpof=true&sd=true)
+[![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://drive.google.com/file/d/1uN3J5IEyd_YrnLCR39CwY86xEe5lsAqf/view?usp=sharing)
  
 ---
  
