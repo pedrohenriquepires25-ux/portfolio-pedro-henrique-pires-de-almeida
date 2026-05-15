@@ -14,7 +14,7 @@
 ---
  
 ### 👨‍💻 Sobre
-Atualmente cursando o 1º período de Análise e desenvolvimento de sistemas na Universidade Cidade de São Paulo. Sou apaixonado por resolver problemas através da tecnologia e possuo foco em [Área de Interesse : Desenvolvimento Frontend e Análise de Dados.
+Atualmente cursando o 1º período de Análise e desenvolvimento de sistemas na Universidade Cidade de São Paulo. Sou apaixonado por resolver problemas através da tecnologia e possuo foco em Área de Interesse : Desenvolvimento Frontend e Análise de Dados.
  
 * *Habilidades Técnicas:*Python, Js, SQL, AWS, Docker.
 * *Habilidades Socioemocionais:* Trabalho em equipe, comunicação assertiva e pensamento crítico.
